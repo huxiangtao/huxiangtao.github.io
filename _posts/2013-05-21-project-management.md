@@ -6,7 +6,7 @@ tags : [intro, jekyll, tutorial]
 title : 项目管理
 articleType : blog
 ---
-{% include JB/setup %}
+
 
 ##项目管理大纲
 

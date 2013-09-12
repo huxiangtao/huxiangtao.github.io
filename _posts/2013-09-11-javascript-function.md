@@ -6,7 +6,7 @@ title : js方法
 tags : [javascript, split, function]
 articleType : blog
 ---
-{% include JB/setup %}
+
 
 
 .map() 方法，对数组遍历执行，同时也会返回一个数组。其中x参数相当于数组中的项，这里，要截断“=”号后面的字符，只要对单个项也就是字符串

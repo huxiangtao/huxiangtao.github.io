@@ -6,7 +6,7 @@ tags : [杂文, coding]
 title : 自学编程，十年磨一剑
 articleType : blog
 ---
-{% include JB/setup %}
+
 
 ######译注：
 本文作者Peter Norvig目前任职于Google，其职位是研究主管（Director of  Research). Peter Norvig是享誉世界的计算机科学家和人工智能专家。他是[AAAI](http://www.aaai.org/home.html)和[ACM](http://www.acm.org/)的会员，是业界内经典书籍《Artificial Intelligence: A Modern Approach | 人工智能：一种现代方法》的作者之一。在加入Google之前，他曾经是NASA(美国航空航天局）计算科学部门的主要负责人，并在南加州大学以及伯克利大学任教。以下为译文。

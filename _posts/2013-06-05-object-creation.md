@@ -6,13 +6,9 @@ tags : [creat, object, tutorial]
 title : 创建对象
 articleType : blog
 ---
-{% include JB/setup %}
 
+最简单的办法，创建Object实例，再对其添加属性和方法。
 
-
-
-
-    /*最简单的办法，创建Object实例，再对其添加属性和方法。*/
     var person = new Object();
     person.name = "Nicholas";
     person.age = 29;
@@ -25,7 +21,8 @@ articleType : blog
 
 
 
-    /*工厂模式*/
+
+工厂模式
 
     function createPerson(name, age, job) {
         var o = new Object();
@@ -43,7 +40,7 @@ articleType : blog
 
 
 
-    /*构造函数模式*/
+构造函数模式
 
     function Person(name, age, job) {
         this.name = name;
@@ -67,7 +64,7 @@ articleType : blog
 
 
 
-    /*原型模式*/
+原型模式
 
     function Person() {}
 
@@ -95,7 +92,7 @@ articleType : blog
 
 
 
-    /*更简单的原型语法,用对象字面量形式创建新对象*/
+更简单的原型语法,用对象字面量形式创建新对象
 
     function Person() {}
 
@@ -129,7 +126,8 @@ articleType : blog
 
 
 
-    /*原型的动态性*/
+原型的动态性
+
     var person = new Person();
 
     Person.prototype.sayHi = function() {
@@ -164,7 +162,8 @@ articleType : blog
 
 
 
-    /*原生对象的原型*/
+原生对象的原型
+
     string.prototype.startsWith = function(text) {
         return this.indexOf(text) == 0;
     };
@@ -201,7 +200,7 @@ articleType : blog
 
 
 
-    /*动态原型模式,根据实际情况添加方法到原型，原型的修改能实时反映到实例中*/
+动态原型模式,根据实际情况添加方法到原型，原型的修改能实时反映到实例中
 
     function Person(name, age, job) {
         //属性
@@ -211,7 +210,6 @@ articleType : blog
 
         //方法
         if (typeof this.sayName != "function") {
-
             Person.prototype.sayName = function() {
                 alert(this.name);
             };
@@ -224,7 +222,7 @@ articleType : blog
 
 
 
-    /*寄生构造函数模式*/
+寄生构造函数模式
 
     function Person(name, age, job) {
         var o = new Object();
@@ -265,7 +263,7 @@ articleType : blog
 
 
 
-    /*稳妥构造函数模式*/
+稳妥构造函数模式
 
     function Person(name, age, job) {
         //创建要返回的对象
