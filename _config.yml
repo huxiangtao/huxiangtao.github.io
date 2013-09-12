@@ -2,5 +2,5 @@ markdown: rdiscount
 permalink: /:title.html
 paginate: 5
 pygments: true
-production_url : http://username.github.com
+url : http://username.github.com
 name: "elliot's blog"
