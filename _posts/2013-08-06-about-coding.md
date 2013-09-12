@@ -121,7 +121,7 @@ Lave, Jean, [Cognition in Practice: Mind, Mathematics, and Culture in Everyday L
 
 ####最后推荐一张漫画：《21天自学C++》
 
-![teach-yourself-C++-cpp-in-21-days](css/images/teach-yourself-C++-cpp-in-21-days.png)
+![teach-yourself-C++-cpp-in-21-days](img/teach-yourself-C++-cpp-in-21-days.png)
 
 
 
