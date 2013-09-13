@@ -6,11 +6,11 @@
  * To change this template use File | Settings | File Templates.
  */
 
-
+/*回到顶部*/
 (function() {
 
     var $text = "返回顶部",
-        $elem = $('<div class="backToTop">hh</div>');
+        $elem = $('<a class="backToTop">hh</a>');
 
     $elem.click(function() {
         $("html, body").animate({ scrollTop: 0 }, 120);
@@ -21,7 +21,7 @@
             var st = $(document).scrollTop(),
                 winh = $(window).height();
 
-            (st > 0) ? $elem.show() : $elem.hide();
+            (st > 100) ? $elem.fadeIn() : $elem.fadeOut();
         }
 
     $(window).bind("scroll",$backTopFun);

@@ -2,20 +2,20 @@
 <div class="center">
   {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
-      <a href="/" class="fl">Previous</a>
+      <a href="/">Previous</a>
     {% else %}
-      <a href="{{ paginator.previous_page_path }}" class="fl">Previous</a>
+      <a href="{{ paginator.previous_page_path }}">Previous</a>
     {% endif %}
   {% else %}
-    <span class="fl gray">Previous</span>
+    <span class="gray">Previous</span>
   {% endif %}
 
   {{ paginator.page }} / {{ paginator.total_pages }}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="fr">Next</a>
+    <a href="{{ paginator.next_page_path }}">Next</a>
   {% else %}
-    <span class="fr gray">Next</span>
+    <span class="gray">Next</span>
   {% endif %}
 </div>
 {% endif %}
