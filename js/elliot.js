@@ -2,14 +2,14 @@
  * Created with IntelliJ IDEA.
  * User: huxiangtao
  * Date: 13-9-13
- * Time: ÉÏÎç10:22
+ * Time: ä¸Šåˆ10:22
  * To change this template use File | Settings | File Templates.
  */
 
 
 (function() {
 
-    var $text = "·µ»Ø¶¥²¿",
+    var $text = "è¿”å›é¡¶éƒ¨",
         $elem = $('<div class="backToTop"></div>').appendTo($('body')).text($text).click(function() {}),
         $backTopFun = function() {
             var st = $(document).scrollTop(),
@@ -19,5 +19,4 @@
         };
 
     $(window).bind("scroll",$backTopFun);
-    debugger;
 })();
