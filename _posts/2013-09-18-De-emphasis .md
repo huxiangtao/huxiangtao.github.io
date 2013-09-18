@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Js经典去除函数浅析"
+title: "Js经典去重函数浅析"
 category : javascript
 articleType : blog
 ---
