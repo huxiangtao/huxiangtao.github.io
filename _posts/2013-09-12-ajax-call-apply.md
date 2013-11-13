@@ -75,6 +75,7 @@ articleType : blog
 是单个参数，而apply则必须传递arguments数组作为参数。
 
 上栗子：
+
     function A() {
         this.name = "elliot";
         this.age = 19;
