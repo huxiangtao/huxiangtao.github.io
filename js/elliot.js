@@ -24,5 +24,16 @@
             (st > 100) ? $elem.fadeIn() : $elem.fadeOut();
         }
 
+    $.ajax({
+        type: "get",
+        url:  "test.html",
+        success: function(res) {
+            alert(res);
+        },
+        error: function() {
+            alert(2);
+        }
+    });
+
     $(window).bind("scroll",$backTopFun);
 })();

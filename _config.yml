@@ -4,3 +4,4 @@ paginate: 5
 pygments: true
 url : "http://huxiangtao.github.com"
 name: "elliot's blog"
+encoding: utf-8
