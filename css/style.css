@@ -121,13 +121,23 @@ pre code {
     margin: 0;
 }
 
+.center a,
+.center .current {
+    float:left;
+    font-size:16px;
+    margin-left:5px;
+}
+
 .center .glyphicon {
     float:left;
     margin-left: 5px;
     font-size: 24px;
 }
-.center .paginfo {
-    float:left;
-    font-size:16px;
-    margin-left:5px;
+
+
+.sidebar {
+    margin: 100px 0 0 0;
+}
+a,a:hover {
+    text-decoration: none;
 }
