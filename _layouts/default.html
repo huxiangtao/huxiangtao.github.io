@@ -1,22 +1,6 @@
 {% include _head.html %}
 <div class="row">
-    <div class="col-md-3">
-        <div class="bs-sidebar hidden-print affix" role="complementary">
-            <h1 class="h2 m-0"><a href="{{site.url}}">{{site.name}}</a></h1>
-            <p>{{site.description}}</p>
-            <ul class="nav bs-sidenav">
-                <li>
-                    <a href="/categories" title="Categories">Categories</a>
-                </li>
-                <li>
-                    <a href="/categories" title="Categories">Categories</a>
-                </li>
-                <li>
-                    <a href="/categories" title="Categories">Categories</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    {% include _sidebar.html %}
     <div class="col-md-9" role="main">
         {{ content }}
     </div>
