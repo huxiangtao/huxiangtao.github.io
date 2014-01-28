@@ -2,20 +2,26 @@
 <div class="center">
   {% if paginator.previous_page %}
    {% if paginator.previous_page == 1 %}
-      <a href="/">Previous</a>
+    <a href="{{ paginator.previous_page_path }}">
+        <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    </a>
     {% else %}
-      <a href="{{ paginator.previous_page_path }}">Previous</a>
+    <span class="glyphicon glyphicon-circle-arrow-left gray"></span>
     {% endif %}
   {% else %}
-    <span class="gray">Previous</span>
+    <span class="glyphicon glyphicon-circle-arrow-left gray"></span>
   {% endif %}
 
-  {{ paginator.page }} / {{ paginator.total_pages }}
+    <span class="paginfo">
+        {{ paginator.page }} / {{ paginator.total_pages }}
+    </span>
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Next</a>
+    <a href="{{ paginator.next_page_path }}">
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
   {% else %}
-    <span class="gray">Next</span>
+    <span class="glyphicon glyphicon-circle-arrow-right gray"></span>
   {% endif %}
 </div>
 {% endif %}
