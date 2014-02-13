@@ -26,3 +26,4 @@
 
     $(window).bind("scroll",$backTopFun);
 })();
+
