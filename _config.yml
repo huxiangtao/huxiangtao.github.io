@@ -2,6 +2,6 @@ markdown: rdiscount
 permalink: /:title.html
 paginate: 5
 pygments: true
-url : "huxiangtao.github.com"
+url : "huxiangtao.github.io"
 name: "elliot's blog"
 encoding: utf-8
