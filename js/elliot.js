@@ -32,6 +32,7 @@
     (function(){
         // 调用图片延时加载
         lazyload();
+        $(window).scroll();
         function lazyload() {
             $(window).bind("scroll", function() {
                 $("img.J_lazy").lazyload({
@@ -39,7 +40,7 @@
                 });
                 $("img.J_lazy").removeClass("J_lazy");
             });
-            $(window).scroll();
+
         };
     })();
 
