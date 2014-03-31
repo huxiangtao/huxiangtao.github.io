@@ -32,15 +32,14 @@
     (function(){
         // 调用图片延时加载
         lazyload();
-        $(window).scroll();
         function lazyload() {
-            $(window).bind("scroll", function() {
+            $(window).bind("scroll resize", function() {
                 $("img.J_lazy").lazyload({
                     effect : "fadeIn"
                 });
                 $("img.J_lazy").removeClass("J_lazy");
             });
-
+            $(window).resize();
         };
     })();
 
