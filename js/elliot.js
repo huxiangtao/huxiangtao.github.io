@@ -32,15 +32,43 @@
     (function(){
         // 调用图片延时加载
         lazyload();
+
         function lazyload() {
-            $(window).bind("scroll resize", function() {
-                $("img.J_lazy").lazyload({
-                    effect : "fadeIn"
+
+            $window = $(window);
+
+            /**
+             * loadImg
+             * @param  {Array} images
+             */
+            var loadImg = function(images) {
+                var top = $window.scrollTop() + $window.height();
+
+                $.each(images, function(){
+                    var $this = $(this),
+                        src = $this.attr("data-original");
+
+                    if ($this.offset().top < top) {
+                        $this.attr("src", src);
+                        $this.removeClass("J_lazy");
+                    }
                 });
-                $("img.J_lazy").removeClass("J_lazy");
+            };
+
+            $window.bind("scroll.lazyload resize.lazyload", function() {
+                var $images = $("img.J_lazy");
+
+                if (!!$images.length) {
+                    loadImg($images);
+                } else {
+                    $window.unbind("scroll.lazyload resize.lazyload");
+                }
             });
-            $(window).resize();
+
+            // 第一次触发
+            $window.resize();
         };
+
     })();
 
 })();
