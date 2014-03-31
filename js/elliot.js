@@ -39,7 +39,7 @@
                 });
                 $("img.J_lazy").removeClass("J_lazy");
             });
-            $(document).trigger('scroll');
+            $(window).trigger('scroll');
         };
     })();
 
