@@ -6,7 +6,7 @@ layout: default
 <article class="post">
     <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
     <p>{{ post.date | date_to_string }}<span class="pipe">-</span>{{ post.category }}</p>
-    {{ post.excerpt }}
+    {{ post.content|strip_html |  truncate:50}}
     <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read More &raquo;</a>
 </article>
 {% endfor %}
