@@ -25,5 +25,23 @@
         }
 
     $(window).bind("scroll",$backTopFun);
+
+    /**
+     * lazyload
+     */
+    (function(){
+        // 调用图片延时加载
+        lazyload();
+        function lazyload() {
+            $(document).on("scroll", function() {
+                $("img.J_lazy").lazyload({
+                    effect : "fadeIn"
+                });
+                $("img.J_lazy").removeClass("J_lazy");
+            });
+            $(document).trigger('scroll');
+        };
+    })();
+
 })();
 
