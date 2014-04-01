@@ -58,12 +58,12 @@
             if(!!$images.length) {
                 loadImg($images);
             }
-            $(document).on("scroll resize", function() {
+            /*$(document).on("scroll resize", function() {
                 $("img.J_lazy").lazyload({
                     effect : "fadeIn"
                 });
                 $("img.J_lazy").removeClass("J_lazy");
-            });
+            });*/
         };
 
     })();
