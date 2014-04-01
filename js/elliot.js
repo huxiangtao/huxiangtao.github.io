@@ -64,9 +64,6 @@
                 });
                 $("img.J_lazy").removeClass("J_lazy");
             });
-
-            // 第一次触发
-            $window.resize();
         };
 
     })();
