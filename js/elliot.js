@@ -34,8 +34,8 @@
         lazyload();
 
         function lazyload() {
-
-            $window = $(window);
+            var $images = $("img.J_lazy"),
+                $window = $(window);
 
             /**
              * loadImg
@@ -55,14 +55,14 @@
                 });
             };
 
-            $window.bind("scroll.lazyload resize.lazyload", function() {
-                var $images = $("img.J_lazy");
-
-                if (!!$images.length) {
-                    loadImg($images);
-                } else {
-                    $window.unbind("scroll.lazyload resize.lazyload");
-                }
+            if(!!$images.length) {
+                loadImg($images);
+            }
+            $(document).on("scroll resize", function() {
+                $("img.J_lazy").lazyload({
+                    effect : "fadeIn"
+                });
+                $("img.J_lazy").removeClass("J_lazy");
             });
 
             // 第一次触发
