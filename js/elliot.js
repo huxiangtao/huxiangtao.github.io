@@ -68,5 +68,14 @@
 
     })();
 
+
+    var $button = $(".J_sideMenu");
+    $button.click(function() {
+        $(".left-menu").toggle('slow',function() {
+            $(this).css('background-color','red');
+        });
+    });
+
+
 })();
 
