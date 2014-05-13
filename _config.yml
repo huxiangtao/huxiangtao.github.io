@@ -2,7 +2,7 @@ markdown: rdiscount
 permalink: /:title.html
 paginate: 5
 pygments: true
-url : "http://huxaingtao.github.com"
+url : "http://huxiangtao.github.com"
 name: "elliot's blog"
 encoding: utf-8
 version : "?201403267"
