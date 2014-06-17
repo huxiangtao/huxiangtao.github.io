@@ -5,25 +5,25 @@
 require.config({
     baseUrl : "js/lib",
     paths : {
-        "jquery" : "jquery",
+        "jquery" : "jquery-1.11.1",
         "lazyloadmin" : "jquery.lazyload.min",
-        "nprogress" : "nprogress",
+        "nprogressmin" : "nprogressmin",
         "search" : "../module/search",
         "backtop" : "../module/backtop",
         "lazyload" : "../module/lazyload",
-        "sidenav" :  "../module/sidenav"
+        "sidenav" :  "../module/sidenav",
+        "nprogress" : "../module/nprogress"
 
     },
     shim : {
-        lazyloadmin : {'export':'ld','deps' : ['jquery']},
-        nprogress : {'export' : 'nprogress','deps' : ['jquery']}
+        lazyloadmin : {'export':'ld','deps' : ['jquery']}
     }
 });
 
 
-require(['backtop','sidenav'],function(backtop,sidenav) {
+require(['backtop','sidenav','nprogress'],function(backtop,sidenav,nprogress) {
     sidenav.sidenav();
     backtop.backtop();
-
+    nprogress.nprogress();
 });
 

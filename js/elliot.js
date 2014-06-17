@@ -9,11 +9,7 @@
 /*回到顶部*/
 (function() {
 
-    $(window).load(function() {
-        NProgress.start();
-        NProgress.inc();
-        NProgress.done();
-    });
+
 
 
 
