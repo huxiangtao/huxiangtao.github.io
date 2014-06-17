@@ -2,7 +2,7 @@
 layout: post
 category : Http
 tagline: "http"
-tags : [android]
+tags : [http]
 title : Http definitive guide 01
 articleType : blog
 ---
