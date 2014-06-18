@@ -3,7 +3,7 @@
  */
 
 require.config({
-    baseUrl : "js/lib",
+    baseUrl : "../js/lib",
     paths : {
         "jquery" : "jquery-1.11.1",
         "lazyloadmin" : "jquery.lazyload.min",
