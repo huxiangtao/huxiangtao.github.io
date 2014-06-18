@@ -5,12 +5,10 @@
 define(['jquery','nprogressmin'],function($,nprogressmin) {
 
     var nprogress = function() {
-        $(window).load(function() {
-            NProgress.start();
-            NProgress.inc();
-            NProgress.done();
-        });
 
+        NProgress.start();
+        NProgress.inc();
+        NProgress.done();
     };
 
     return {
