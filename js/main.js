@@ -21,8 +21,12 @@ require.config({
     }
 });
 
+define('core',['jquery','nprogressmin'],function($) {
+    return $;
+});
 
-require(['nprogress','backtop','sidenav'],function(nprogress,backtop,sidenav) {
+
+require(['core','nprogress','backtop','sidenav'],function($,nprogress,backtop,sidenav) {
     nprogress.nprogress();
     sidenav.sidenav();
     backtop.backtop();
