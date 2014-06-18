@@ -16,14 +16,15 @@ require.config({
 
     },
     shim : {
-        lazyloadmin : {'export':'ld','deps' : ['jquery']}
+        lazyloadmin : {'export':'ld','deps' : ['jquery']},
+        nprogress : {'export' : 'nprogress','deps' : ['jquery']}
     }
 });
 
 
-require(['backtop','sidenav','nprogress'],function(backtop,sidenav,nprogress) {
+require(['nprogress','backtop','sidenav'],function(nprogress,backtop,sidenav) {
+    nprogress.nprogress();
     sidenav.sidenav();
     backtop.backtop();
-    nprogress.nprogress();
 });
 
