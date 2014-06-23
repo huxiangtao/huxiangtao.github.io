@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 category : test
 tagline: "Integer type"
 tags : [android]
