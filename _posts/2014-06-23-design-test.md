@@ -7,4 +7,5 @@ title : test
 articleType : blog
 ---
 
-![for test in the weixin](img/test/car-test-index.png)
+
+<img class="img-responsive" src="img/test/car-test-index.png"></img>
