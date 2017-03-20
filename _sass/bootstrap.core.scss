@@ -2,20 +2,20 @@
  * Created by huxiangtao on 2017/3/20.
  */
 // Core variables and mixins
-@import "bootstrap/bootstrap/variables";
-@import "bootstrap/bootstrap/mixins";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 // Reset and dependencies
-@import "bootstrap/bootstrap/normalize";
-@import "bootstrap/bootstrap/print";
-@import "bootstrap/bootstrap/glyphicons";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
 // Core CSS
-@import "bootstrap/bootstrap/scaffolding";
-@import "bootstrap/bootstrap/type";
-@import "bootstrap/bootstrap/code";
-@import "bootstrap/bootstrap/grid";
-@import "bootstrap/bootstrap/tables";
-@import "bootstrap/bootstrap/forms";
-@import "bootstrap/bootstrap/buttons";
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
 // Utility classes
-@import "bootstrap/bootstrap/utilities";
-@import "bootstrap/bootstrap/responsive-utilities";
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
