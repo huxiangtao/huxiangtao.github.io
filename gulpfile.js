@@ -7,12 +7,7 @@ var gulp = require('gulp'),
     clean = require('gulp-clean');
 
 gulp.task('styleclean',function() {
-    return gulp.src('dist/css', {read: false})
-        .pipe(clean());
-});
-
-gulp.task('fontsclean',function() {
-    return gulp.src('dist/fonts', {read: false})
+    return gulp.src('dist/css/*', {read: false})
         .pipe(clean());
 });
 
@@ -20,22 +15,29 @@ gulp.task('bootclean',function() {
     return gulp.src('_sass/bootstrap/*')
         .pipe(clean());
 })
+
+gulp.task('imagesclean',function() {
+    return gulp.src('dist/images/*', {read: false})
+        .pipe(clean());
+})
+
+var bootNodePath = 'node_modules/bootstrap-sass/assets/';
 gulp.task('bootstrap',['bootclean'],function() {
-    return gulp.src('node_modules/bootstrap-sass/assets/stylesheets/**')
+    return gulp.src([bootNodePath+'stylesheets/**',bootNodePath+'fonts/**'])
         .pipe(gulp.dest('_sass/bootstrap'))
 })
 
 
-gulp.task('fonts',['fontsclean'],function() {
-    return gulp.src('node_modules/bootstrap-sass/assets/fonts/**')
-        .pipe(gulp.dest('dist/fonts'))
-})
-
 gulp.task('sass',['styleclean','bootstrap'],function() {
-    return gulp.src(['_sass/main.scss','_sass/custom/*.scss'])
+    return gulp.src('_sass/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('basebuild',['fonts','sass']);
+gulp.task('images',['imagesclean'],function() {
+    return gulp.src('_sass/images/**')
+        .pipe(gulp.dest('dist/images'))
+})
+
+gulp.task('basebuild',['sass','images']);
