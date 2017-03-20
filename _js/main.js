@@ -3,13 +3,13 @@
  */
 
 require.config({
-    baseUrl : "../js/lib",
+    baseUrl : "../dist/js",
     paths : {
-        "jquery" : "jquery-1.11.1",
-        "search" : "../module/search",
+        "jquery" : "node_modules/jquery.min",
+        "lunr" : "node_modules/lunr.min",
     },
     shim : {
-        lazyloadmin : {'export':'ld','deps' : ['jquery']}
+        lunr : {'export':'lunr','deps' : []}
     }
 });
 
