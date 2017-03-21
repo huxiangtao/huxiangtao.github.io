@@ -35,13 +35,13 @@ gulp.task('bootstrap',['bootclean'],function() {
 })
 
 gulp.task('fonts',['fontsclean'],function() {
-    return gulp.src(bootNodePath+'fonts/**')
+    return gulp.src([bootNodePath+'fonts/**','node_modules/font-awesome/fonts/**'])
         .pipe(gulp.dest('dist/fonts'))
 })
 
 
 gulp.task('sass',['styleclean','bootstrap'],function() {
-    return gulp.src('_sass/main.scss')
+    return gulp.src(['_sass/main.scss','node_modules/font-awesome/scss/font-awesome.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('dist/css'));

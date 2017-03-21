@@ -101,3 +101,14 @@ pre code {
     height:60px;
     width:60px;
 }
+.intr{
+    color:#999;
+    p {
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .desc{
+        height:20px;
+        overflow: hidden;
+    }
+}
