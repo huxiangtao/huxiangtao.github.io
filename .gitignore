@@ -26,3 +26,4 @@ test/
 node_modules/
 _site/
 npm-debug.log
+_sass/bootstrap/
