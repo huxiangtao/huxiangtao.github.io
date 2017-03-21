@@ -1,10 +1,10 @@
 {% include _head.html %}
 <div class="row">
-    {% include _sidenav.html open=false %}
+    {% include _sidenav.html %}
     <div class="col-xs-9 col-sm-9 col-lg-9 col-md-offset-3" role="main">
-        <article class="post">
+        <article>
             <header class="post-hd">
-                <h2>{{ page.title }}</h2>
+                <h3>{{ page.title }}</h3>
             </header>
             <div class="post-bd {{ page.title }}">
                 {{ content }}

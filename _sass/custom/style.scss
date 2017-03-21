@@ -6,8 +6,7 @@ body {
     margin-top:20px;
 }
 
-article{
-    margin:25px 0;
+article.post{
     padding-bottom: 15px;
     border-bottom: 1px dashed #dddddd;
 }
@@ -92,8 +91,11 @@ pre code {
     background-color: transparent;
     border: 0;
 }
+.personal-info {
+    font-size:1.5rem;
+}
 
-.avator{
+.personal-info .avator{
     background:url(../images/avator.jpg) 0 0 no-repeat;
     background-size:60px 60px;
     border-radius:50%;
@@ -101,14 +103,57 @@ pre code {
     height:60px;
     width:60px;
 }
-.intr{
-    color:#999;
-    p {
-        font-size:1.5rem;
-        font-weight:bold;
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:0em;
     }
-    .desc{
-        height:20px;
-        overflow: hidden;
+
+    to {
+        opacity: 1;
+        top:-0.35em;
     }
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:0em;
+    }
+
+    to {
+        opacity: 1;
+        top:-0.35em;
+    }
+}
+
+.personal-info .intr{
+    color:#999;
+    .desc{
+        position: relative;
+        overflow: hidden;
+        b{
+            color:#666;
+            display:inline-block;
+            position: absolute;
+            top:-0.36em;
+            margin-left:0.3em;
+        }
+        b.hidden{
+
+        }
+        b.visible{
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            animation-duration:0.2s;
+            -webkit-animation-duration:0.2s;
+            animation-timing-function:ease;
+            -webkit-animation-timing-function:ease;
+        }
+    }
+    .follow{
+        font-size:1.5rem;
+    }
+}
+
