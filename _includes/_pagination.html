@@ -1,35 +1,51 @@
 {% if paginator.total_pages > 1 %}
-<div class="center">
+<nav aria-label="Page navigation">
+    <ul class="pagination">
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <a href="/">
-            <span class="glyphicon glyphicon-circle-arrow-left"></span>
-        </a>
+        <li>
+            <a href="/" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
         {% else %}
-        <a href="/page{{ paginator.previous_page }}">
-            <span class="glyphicon glyphicon-circle-arrow-left"></span>
-        </a>
+        <li>
+            <a href="/page{{ paginator.previous_page }}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
         {% endif %}
     {% endif %}
 
     {% if paginator.page == 1 %}
-        <span class="current">1</span>
+        <li class="active">
+            <span>1</span>
+        </li>
     {% else %}
-        <a href="/">1</a>
+        <li>
+            <a href="/" >1</a>
+        </li>
     {% endif %}
 
     {% for count in (2..paginator.total_pages) %}
         {% if count == paginator.page %}
-        <span class="current">{{ count }}</span>
+        <li class="active">
+            <span>{{ count }}</span>
+        </li>
         {% else %}
-        <a href="/page{{ count }}">{{ count }}</a>
+        <li>
+            <a href="/page{{ count }}" >{{ count }}</a>
+        </li>
         {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-        <a href="/page{{paginator.next_page}}">
-            <span class="glyphicon glyphicon-circle-arrow-right"></span>
-        </a>
+        <li>
+            <a href="/page{{paginator.next_page}}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
     {% endif %}
-</div>
+    </ul>
+</nav>
 {% endif %}
