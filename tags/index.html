@@ -1,0 +1,25 @@
+---
+layout: tags
+title: tags
+---
+<div class="page-header">
+{% for tag in site.tags %}
+<a style="margin-bottom:5px;" href="#{{tag[0]}}" type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+    <span class="glyphicon glyphicon-tag" aria-hidden="true">{{tag[0]}}</span>
+</a>
+
+{% endfor %}
+</div>
+{% for tag in site.tags %}
+<h4 id="{{ tag[0] }}">{{ tag[0] }}</h4>
+<ul>
+{% for post in tag[1] %}
+<li>
+    <p>
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </p>
+</li>
+{% endfor %}
+</ul>
+{% endfor %}

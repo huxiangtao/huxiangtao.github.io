@@ -4,9 +4,10 @@ layout: default
 
 {% for post in paginator.posts %}
 <article class="post">
+
     <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
     <span>{{ post.tagline }}</span>
-    <p>{{ post.date | date_to_string }}<span class="pipe">-</span>{{ post.category }}</p>
+    <h6><small>{{ post.date | date:'%Y-%m-%d' }}<span class="pipe">-</span>{{ post.category }}</small></h6>
     {{ post.content|strip_html |  truncate:300}}
     <a href="{{ site.url }}{{ post.url }}{{ site.version }}" title="{{ post.title }}">Read More &raquo;</a>
 </article>
