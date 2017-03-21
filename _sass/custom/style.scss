@@ -19,6 +19,9 @@ p, .p {
     font-size: 18px;
     margin-bottom: 20px;
 }
+.btn {
+    line-height: 1.428571429;
+}
 small, .small { font-size: 16px; }
 
 @media screen and (min-width: 640px) {
@@ -28,7 +31,7 @@ small, .small { font-size: 16px; }
 }
 
 a { color: #09c; text-decoration: none; }
-a:hover { color: #069; }
+a:hover { color: #069; text-decoration: none;}
 h2 a { color: #333;font-weight:bold;}
 
 .m-0 { margin: 0; }
@@ -100,5 +103,4 @@ pre code {
     display:block;
     height:60px;
     width:60px;
-    border:1px solid #999
 }
