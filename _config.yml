@@ -7,3 +7,4 @@ name: "elliot's blog"
 encoding: utf-8
 version : "?201403267"
 gems: [jekyll,jekyll-paginate]
+description: "elliot's blogdfsa"

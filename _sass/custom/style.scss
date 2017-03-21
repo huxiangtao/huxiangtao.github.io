@@ -3,6 +3,7 @@ body {
     font-size: 100%;
     line-height: 1.75;
     font-family: 'Merriweather', serif;
+    margin-top:20px;
 }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
@@ -29,13 +30,6 @@ small, .small { font-size: 16px; }
 a { color: #09c; text-decoration: none; }
 a:hover { color: #069; }
 h2 a { color: #333;font-weight:bold;}
-
-/*.wrap {
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 32px 5% 64px 5%;
-}*/
 
 .m-0 { margin: 0; }
 .mb { margin-bottom: 64px; }
@@ -99,20 +93,12 @@ pre code {
     border: 0;
 }
 
-.pre-scrollable {
-    max-height: 340px;
-    overflow-y: scroll;
+.avator{
+    background:url(../images/avator.jpg) 0 0 no-repeat;
+    background-size:60px 60px;
+    border-radius:50%;
+    display:block;
+    height:60px;
+    width:60px;
+    border:1px solid #999
 }
-
-
-.backToTop {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-a,a:hover {
-    text-decoration: none;
-}
-.adaptive{float:right}@media (max-width:480px){.adaptive{width:100%}}@media (max-width:480px){.sidenav{display:none}}@media (max-width:480px){.sidenav-mobile{display:block}}@media (min-width:480px){.sidenav-mobile{display:none}}.left-menu{display:none}.avator{background:url(../images/avator.jpg) 0 0 no-repeat;background-size:60px 60px;border-radius:50%;display:block;height:60px;width:60px;border:1px solid #999}.bs-sidebar{margin:0 auto}.blog-name{text-align:left;font-size:20px;margin-top:10px;font-weight:700}.bs-sidenav{margin-top:20px}.bs-sidenav li a{padding-left:5px;font:"Microsoft YaHei"}.container{margin:40px auto}.post-hd h2{font-size:18px}blockquote p{font-size:16px}
