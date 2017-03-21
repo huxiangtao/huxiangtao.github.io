@@ -2,8 +2,14 @@ body {
     color: #333;
     font-size: 100%;
     line-height: 1.75;
-    font-family: 'Merriweather', serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     margin-top:20px;
+}
+
+article{
+    margin:25px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #dddddd;
 }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
@@ -17,7 +23,6 @@ h2, .h2, h3, .h3, h4, h5, h6 {
 }
 p, .p {
     font-size: 18px;
-    margin-bottom: 20px;
 }
 .btn {
     line-height: 1.428571429;
@@ -32,18 +37,14 @@ small, .small { font-size: 16px; }
 
 a { color: #09c; text-decoration: none; }
 a:hover { color: #069; text-decoration: none;}
-h2 a { color: #333;font-weight:bold;}
+h3 a { color: #333;font-weight:bold;}
+h3.blog-name a { color: #09c;font-weight:bold;}
+h3.blog-name a:hover { color: #069;font-weight:bold;}
 
 .m-0 { margin: 0; }
 .mb { margin-bottom: 64px; }
-
-.post { margin-bottom: 96px; }
-.post img { max-width: 100%; }
-
-.center { text-align: center; }
 .fl { float: left; }
 .fr { float: right; }
-
 .gray { color: #999; }
 
 code,
