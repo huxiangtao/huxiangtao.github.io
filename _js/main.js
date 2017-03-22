@@ -5,8 +5,8 @@
 require.config({
     baseUrl : "../dist/js",
     paths : {
-        "jquery" : "node_modules/jquery.min",
-        "lunr" : "node_modules/lunr.min",
+        "jquery" : "nodemodules/jquery.min",
+        "lunr" : "nodemodules/lunr.min",
     },
     shim : {
         lunr : {'export':'lunr','deps' : []}
