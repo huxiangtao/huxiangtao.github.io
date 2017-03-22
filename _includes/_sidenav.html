@@ -1,29 +1,46 @@
-<div class="col-xs-2 sidenav affix">
-    <span class="avator"></span>
-    <h1 class="h2 m-0 blog-name"><a href="{{site.url}}">{{site.name}}</a></h1>
-    <div class="bs-sidebar hidden-print" role="complementary">
-        <p>{{site.description}}</p>
-        <div class="input-group">
-            <input id="J_search"  placeholder="Simple Search" type="text" class="form-control">
+<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 affix hidden-sm hidden-xs">
+    {% if include.person == true %}
+        {% include _personal.html %}
+    {% endif %}
+<!--    <div class="row">
+        <div class="col-sm-11 col-md-12 col-lg-10">
+            <div class="input-group">
+                <input id="J_search"  placeholder="Simple Search" type="text" class="form-control">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
+            </div>
         </div>
-        <ul class="nav bs-sidenav">
-            <li>
-                <a href="/categories" title="Categories">
-                    <span style="margin-right:10px;" class="glyphicon glyphicon-folder-open"></span>
-                    Categories
-                </a>
-            </li>
-            <li>
-                <a href="/categories" title="Categories">
-                    <span style="margin-right:10px;" class="glyphicon glyphicon-folder-open"></span>Categories</a>
-            </li>
-            <li>
-                <a href="/categories" title="Categories">
-                    <span style="margin-right:10px;" class="glyphicon glyphicon-folder-open"></span>Categories</a>
-            </li>
-        </ul>
-    </div>
+    </div>-->
+    <p></p>
+    <ul class="nav">
+        <li>
+            <a href="{{site.url}}" title="Home">
+                <span style="margin-right:10px;" class="glyphicon glyphicon-home"></span>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/categories" title="Categories">
+                {% if include.open %}
+                <span style="margin-right:10px;" class="glyphicon glyphicon-folder-open"></span>
+                {% else %}
+                <span style="margin-right:10px;" class="glyphicon glyphicon-folder-close"></span>
+                {% endif %}
+                Categories
+            </a>
+        </li>
+        <li>
+            <a href="/tags" title="Tags">
+                <span style="margin-right:10px;" class="glyphicon glyphicon-tags"></span>
+                Tags
+            </a>
+        </li>
+        <li>
+            <a href="/about" title="About me">
+                <span style="margin-right:10px;" class="glyphicon glyphicon-user"></span>
+                About
+            </a>
+        </li>
+    </ul>
 </div>

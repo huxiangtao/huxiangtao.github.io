@@ -1,0 +1,205 @@
+body {
+    color: #333;
+    font-size: 100%;
+    line-height: 1.75;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top:20px;
+}
+
+article.post{
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #dddddd;
+}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
+h1, .h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+h2, .h2, h3, .h3, h4, h5, h6 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+p, .p {
+    font-size: 18px;
+}
+.btn {
+    line-height: 1.428571429;
+}
+@media screen and (min-width: 640px) {
+    h1, .h1 { font-size: 48px; }
+    h2, .h2 { font-size: 32px; }
+    p, .p   { font-size: 18px; }
+}
+
+a { color: #09c; text-decoration: none; }
+a:hover { color: #069; text-decoration: none;}
+h3 a { color: #333;font-weight:bold;}
+
+.m-0 { margin: 0; }
+.mb { margin-bottom: 64px; }
+.fl { float: left; }
+.fr { float: right; }
+.gray { color: #999; }
+
+code,
+pre {
+    padding: 0 3px 2px;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    color: #333333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+code {
+    padding: 2px 4px;
+    color: #d14;
+    white-space: nowrap;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+pre.prettyprint {
+    margin-bottom: 20px;
+}
+
+pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0;
+}
+.personal-info {
+    font-size:1.5rem;
+}
+
+.personal-info .avator{
+    background:url(../images/avator.jpg) 0 0 no-repeat;
+    background-size:60px 60px;
+    border-radius:50%;
+    display:block;
+    height:60px;
+    width:60px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:0em;
+    }
+
+    to {
+        opacity: 1;
+        top:-0.35em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top:0em;
+    }
+
+    to {
+        opacity: 1;
+        top:-0.35em;
+    }
+}
+
+.personal-info .intr{
+    color:#999;
+    .desc{
+        position: relative;
+        overflow: hidden;
+        b{
+            color:#666;
+            display:inline-block;
+            position: absolute;
+            top:-0.36em;
+            margin-left:0.3em;
+        }
+        b.hidden{
+
+        }
+        b.visible{
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+            animation-duration:0.2s;
+            -webkit-animation-duration:0.2s;
+            animation-timing-function:ease;
+            -webkit-animation-timing-function:ease;
+        }
+    }
+    .follow{
+        font-size:1.5rem;
+    }
+}
+
+.tags h5{
+    font-weight: 400;
+}
+.page-hd h1{
+    font-weight:400;
+}
+.time {
+    color:#999;
+    font-weight: 300;
+}
+.post-tag,.post-category {
+    padding:0.2rem 0.5rem;
+    border:none;
+    border-radius:4px;
+    font-size:90%;
+    margin-right: .5rem;
+    transition: all 0.1s ease-in-out;
+    background:rgba(106,159,181,0.15);
+}
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.post-category:before{
+    content: "\f07b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.post-tag:hover,.post-category:hover {
+    text-decoration:none;
+    background:#6a9fb5;
+    color:#fff
+}
+.tag-list,.category-list {
+    margin-top:0;
+    a {
+        display:inline-block;
+        font-size:13px;
+        padding:0.5rem 0.8rem;
+        margin:0.5rem;
+    }
+}
+
+
+

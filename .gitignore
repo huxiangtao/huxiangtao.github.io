@@ -20,9 +20,10 @@ Thumbs.db
 CHANGELOG.md
 CONTRIBUTING.md
 LICENSE.txt
-_sass/
-_site/
 dist/
-node_modules/
 src/
 test/
+node_modules/
+_site/
+npm-debug.log
+_sass/bootstrap/

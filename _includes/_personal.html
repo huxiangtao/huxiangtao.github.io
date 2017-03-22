@@ -1,0 +1,40 @@
+<div class="personal-info">
+    <span class="avator"></span>
+    <div class="intr">
+        A passionate
+            <span class="desc">
+                {% for desc in site.description %}
+                <b class="hidden">{{desc}}</b>
+                {% endfor %}
+            </span>
+        <p class="follow">Follow me:
+            <a target="_blank" href="https://www.linkedin.com/in/xiangtao-hu-23909a6b/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            |
+            <a target="_blank" href="https://github.com/huxiangtao">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            |
+            <a href="mailto:elliot130@163.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+        </p>
+    </div>
+</div>
+<script>
+    (function(){
+        document.addEventListener('DOMContentLoaded', function(){
+            var children = document.getElementsByClassName('desc')[0].children;
+            var length = children.length;
+            var idx = 0;
+            children[idx].className = "visible";
+            setInterval(function(){
+                children[idx].className = "hidden";
+                idx = (idx + 1) % length;
+                children[idx].className = "visible";
+            }, 2000);
+        });
+        //https://codinfox.github.io/
+    })();
+</script>

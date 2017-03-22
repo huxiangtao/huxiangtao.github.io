@@ -1,0 +1,22 @@
+---
+layout: tags
+title: TAGS
+---
+<div class="page-header tag-list">
+{% for tag in site.tags %}
+    <a href="#{{ tag[0] }}" class="post-tag" aria-label="Left Align">{{tag[0]}}</a>
+{% endfor %}
+</div>
+{% for tag in site.tags %}
+<h5 id="{{ tag[0] }}">{{ tag[0] }}</h5>
+<ul>
+{% for post in tag[1] %}
+<li>
+    <p>
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </p>
+</li>
+{% endfor %}
+</ul>
+{% endfor %}
