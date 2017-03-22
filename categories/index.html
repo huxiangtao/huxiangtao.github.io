@@ -1,17 +1,21 @@
 ---
 layout: categories
-title: categories
+title: CATEGORIES
 ---
-
+<div class="page-header category-list">
+    {% for category in site.categories %}
+    <a href="#{{ category[0] }}" class="post-category" aria-label="Left Align">{{category[0]}}</a>
+    {% endfor %}
+</div>
 
 {% for category in site.categories %}
-<h5>{{ category[0] }}</h5>
+<h5 id="{{ category[0] }}">{{ category[0] }}</h5>
 <ul>
 {% for post in category[1] %}
 <li>
     <p>
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <small class="time" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</small>
     </p>
 </li>
 {% endfor %}

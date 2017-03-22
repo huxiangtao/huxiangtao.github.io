@@ -3,10 +3,10 @@
     {% include _sidenav.html open=true %}
     <div class="col-xs-9 col-sm-9 col-lg-9 col-md-offset-3" role="main">
         <article>
-            <div class="page-header">
-                <h3>{{ page.title }}</h3>
-            </div>
-            <div class="post-bd {{ page.title }}">
+            <header class="page-hd">
+                <h1>{{ page.title }}</h1>
+            </header>
+            <div class="category">
                 {{ content }}
             </div>
         </article>

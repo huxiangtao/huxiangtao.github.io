@@ -157,3 +157,49 @@ pre code {
     }
 }
 
+.tags h5{
+    font-weight: 400;
+}
+.page-hd h1{
+    font-weight:400;
+}
+.time {
+    color:#999;
+    font-weight: 300;
+}
+.post-tag,.post-category {
+    padding:0.2rem 0.5rem;
+    border:none;
+    border-radius:4px;
+    font-size:90%;
+    margin-right: .5rem;
+    transition: all 0.1s ease-in-out;
+    background:rgba(106,159,181,0.15);
+}
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.post-category:before{
+    content: "\f07b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.post-tag:hover,.post-category:hover {
+    text-decoration:none;
+    background:#6a9fb5;
+    color:#fff
+}
+.tag-list,.category-list {
+    margin-top:0;
+    a {
+        display:inline-block;
+        font-size:13px;
+        padding:0.5rem 0.8rem;
+        margin:0.5rem;
+    }
+}
+
+
+
