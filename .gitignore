@@ -20,7 +20,6 @@ Thumbs.db
 CHANGELOG.md
 CONTRIBUTING.md
 LICENSE.txt
-dist/
 src/
 test/
 node_modules/
