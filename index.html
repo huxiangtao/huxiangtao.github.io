@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-<article class="post">
+<article class="post-list">
     <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
     <span>{{ post.tagline }}</span>
     <h6><small style="font-weight: 400;font-size:13px;">{{ post.date | date:'%Y-%m-%d' }}

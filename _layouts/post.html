@@ -3,7 +3,15 @@
     {% include _sidenav.html %}
     <div class="col-xs-12 col-sm-9 col-lg-9 col-md-offset-3" role="main">
         <article class="post">
-          <h3 class="post-title">{{ page.title }}</h3>
+          <h3 class="post-title">{{ page.title }}
+              <small style="font-weight: 400;font-size:13px;">
+              {% if page.tags %} |
+              {% for tag in page.tags %}
+                <a href="{{ site.url }}/tags#{{ tag | slugify }}" class="post-tag" aria-label="Left Align">{{tag}}</a>
+              {% endfor %}
+              {% endif %}
+              </small>
+          </h3>
           {{ content }}
           <p class="small gray"><span class="label label-default">{{ page.date | date: '%Y-%m-%d' }}</span></p>
         </article>
