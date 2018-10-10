@@ -29,16 +29,16 @@ articleType : blog
 当这个key所对应的value已经存在在map中的时候，则继续追加当前元素到这个value数组中，注意！这里所取的key都是来自于当前元素的第一个字符。
 
 
-    let hash = {};
+	let hash = {};
     
-    s.forEach((item,i)=>{
-    	let key = item.substring(0,1);
+	s.forEach((item,i)=>{
+		let key = item.substring(0,1);
     	if(!hash[key]) {
     		hash[key] = [item];
     	} else {
     		hash[key].push(item);
     	}
-    });
+	});
     
 最后打印下结果：
 
