@@ -10,18 +10,18 @@ articleType : blog
 
 &nbsp;&nbsp;首先使用随机数动态生成一个包含多个字符串的数组：
 
-    let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+	let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     let s = [];
     function getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min;
     }
     
-    for(let i = 0; i < 28; i++) {
-    	let n = parseInt(getRandomArbitrary(1,26));
-    	let b = parseInt(getRandomArbitrary(1,26));
-    	let a = parseInt(getRandomArbitrary(1,26));
+    for (let i = 0; i < 28; i++) {
+      let n = parseInt(getRandomArbitrary(1,26));
+      let b = parseInt(getRandomArbitrary(1,26));
+      let a = parseInt(getRandomArbitrary(1,26));
     	
-    	s.push(arr[n] + arr[b] + arr[a]);
+      s.push(arr[n] + arr[b] + arr[a]);
     }
 
 &nbsp;&nbsp;再使用hash map 保存各个类型的字符串，具体思路如下：  
