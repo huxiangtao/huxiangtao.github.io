@@ -10,7 +10,7 @@ articleType : blog
 
 在聊二叉树之前，要先解决梳理一些关于指针概念上的问题，在c语言中，指针是一种数据类型，用于保存内存地址，而且往往是以16进制的形式来保存。先看下面的代码：
 
-    void changeInt(int * p);
+	void changeInt(int * p);
     
     int main(void) {
       int n = 6;
@@ -22,7 +22,7 @@ articleType : blog
     
     void changeInt(int * s) {
       *s = 7;
-    }
+	}
     
 理解以上代码比较容易，程序一开始就初始化一个int整数n为6。再初始化一个指向int的指针p，将n的地址赋值给该指针。在调用changeInt()方法的时候，将该指针的值（也就是变量n的地址）作为参数传递进去。实际上，就是将指针p的值复制给了函数changeInt(int * p)的形参s，在函数chanegInt中，对该值（地址值）取值，得到该地址所对应的内存，将内存中的值赋值为7，执行完后，返回到main()函数中，在main()函数中第7行打印值的时候，输出的是新的值——7；
 那么，这种程序如果改变的是一个struct结构，效果是不是一样的呢？
