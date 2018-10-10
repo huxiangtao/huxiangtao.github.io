@@ -42,7 +42,7 @@ articleType : blog
     
 最后打印下结果：
 
-    { h: [ 'hqt', 'hoc', 'hhj' ],
+	{ h: [ 'hqt', 'hoc', 'hhj' ],
       q: [ 'qjw', 'qch' ],
       b: [ 'bsx', 'bjm', 'bpq' ],
       r: [ 'rxm', 'rqk' ],
