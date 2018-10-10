@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /:title.html
 paginate: 5
 highlighter: rouge
