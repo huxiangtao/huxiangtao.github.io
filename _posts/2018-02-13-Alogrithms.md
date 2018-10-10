@@ -33,11 +33,11 @@ articleType : blog
     
 	s.forEach((item,i)=>{
 		let key = item.substring(0,1);
-    	if(!hash[key]) {
-    		hash[key] = [item];
-    	} else {
-    		hash[key].push(item);
-    	}
+    if(!hash[key]) {
+    	hash[key] = [item];
+    } else {
+    	hash[key].push(item);
+    }
 	});
     
 最后打印下结果：
