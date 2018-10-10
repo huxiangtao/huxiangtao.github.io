@@ -2,6 +2,13 @@ markdown: kramdown
 kramdown:
   input:  GFM
   use_coderay: true
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
 permalink: /:title.html
 paginate: 5
 highlighter: rouge
