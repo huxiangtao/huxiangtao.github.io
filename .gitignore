@@ -23,6 +23,7 @@ LICENSE.txt
 src/
 test/
 _site/
+package-lock.json
 npm-debug.log
 _sass/bootstrap/
 node_modules/
