@@ -2,10 +2,7 @@ markdown: kramdown
 kramdown:
   input:  GFM
   use_coderay: true
-  extensions:
-    - autolink
-    - footnotes
-    - smart
+  extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
   syntax_highlighter: rouge
   coderay:
     coderay_line_numbers:  nil
