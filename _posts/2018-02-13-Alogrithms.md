@@ -35,7 +35,7 @@ articleType : blog
 		let key = item.substring(0,1);
     if(!hash[key]) {
     	hash[key] = [item];
-    } else {
+    }else{
     	hash[key].push(item);
     }
 	});
