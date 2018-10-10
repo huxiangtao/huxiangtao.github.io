@@ -1,4 +1,7 @@
 markdown: kramdown
+kramdown:
+  input:  GFM
+  use_coderay: true
 permalink: /:title.html
 paginate: 5
 highlighter: rouge
