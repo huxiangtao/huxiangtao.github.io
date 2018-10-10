@@ -29,6 +29,7 @@ articleType : blog
 当这个key所对应的value已经存在在map中的时候，则继续追加当前元素到这个value数组中，注意！这里所取的key都是来自于当前元素的第一个字符。
 
 
+~~~
 	let hash = {};
     
 	s.forEach((item,i)=>{
