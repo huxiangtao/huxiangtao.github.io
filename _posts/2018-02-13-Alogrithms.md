@@ -9,7 +9,7 @@ articleType : blog
 
 
 &nbsp;&nbsp;首先使用随机数动态生成一个包含多个字符串的数组：
-``` javascript
+```javascript
 	let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     let s = [];
     function getRandomArbitrary(min, max) {
