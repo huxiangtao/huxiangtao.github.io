@@ -11,7 +11,7 @@ articleType : blog
 &nbsp;&nbsp;首先使用随机数动态生成一个包含多个字符串的数组：
 ```javascript
 	let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-    let s = [];
+	let s = [];
     function getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min;
     }
@@ -33,7 +33,7 @@ articleType : blog
     
 	s.forEach((item,i)=>{
 		let key = item.substring(0,1);
-    if(!hash[key]) {
+		if(!hash[key]) {
     	hash[key] = [item];
     }else{
     	hash[key].push(item);
