@@ -28,7 +28,7 @@ articleType : blog
 对给定的数组遍历，取数组中没个元素的第一个字符为key,保存在hash map中，当这个map中这个key所对应的value为空的时候，则初始化该value为一个数组，数组的第一个元素就是当前这个单元。
 当这个key所对应的value已经存在在map中的时候，则继续追加当前元素到这个value数组中，注意！这里所取的key都是来自于当前元素的第一个字符。
 
-
+```javascript
 	let hash = {};
     
 	s.forEach((item,i)=>{
@@ -39,6 +39,7 @@ articleType : blog
     	hash[key].push(item);
     }
 	});
+```
     
 最后打印下结果：
 
