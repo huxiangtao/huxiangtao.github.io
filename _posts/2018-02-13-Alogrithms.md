@@ -33,7 +33,7 @@ articleType : blog
     
 	s.forEach((item,i)=>{
 		let key = item.substring(0,1);
-		if(!hash[key]) {
+		if (!hash[key]) {
     		hash[key] = [item];
     	}else{
     		hash[key].push(item);
