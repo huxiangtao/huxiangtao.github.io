@@ -17,12 +17,12 @@ articleType : blog
 	}
     
 	for (let i = 0; i < 28; i++) {
-		let n = parseInt(getRandomArbitrary(1,26));
-		let b = parseInt(getRandomArbitrary(1,26));
-		let a = parseInt(getRandomArbitrary(1,26));
+	let n = parseInt(getRandomArbitrary(1,26));
+      let b = parseInt(getRandomArbitrary(1,26));
+      let a = parseInt(getRandomArbitrary(1,26));
     	
-		s.push(arr[n] + arr[b] + arr[a]);
-	}
+      s.push(arr[n] + arr[b] + arr[a]);
+    }
 ```
 &nbsp;&nbsp;再使用hash map 保存各个类型的字符串，具体思路如下：  
 对给定的数组遍历，取数组中没个元素的第一个字符为key,保存在hash map中，当这个map中这个key所对应的value为空的时候，则初始化该value为一个数组，数组的第一个元素就是当前这个单元。
@@ -34,10 +34,10 @@ articleType : blog
 	s.forEach((item,i)=>{
 		let key = item.substring(0,1);
 		if(!hash[key]) {
-    	hash[key] = [item];
-    }else{
-    	hash[key].push(item);
-    }
+    		hash[key] = [item];
+    	}else{
+    		hash[key].push(item);
+    	}
 	});
 ```
     
