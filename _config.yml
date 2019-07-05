@@ -10,7 +10,7 @@ kramdown:
 permalink: /:title.html
 paginate: 5
 highlighter: rouge
-url : "http://huxiangtao.github.com"
+url : "http://huxiangtao.github.io"
 name: "elliot's blog"
 encoding: utf-8
 version : "?201403267"
