@@ -1,7 +1,7 @@
 markdown: kramdown
 kramdown:
   input:  GFM
-  use_coderay: true
+  enable_coderay: true
   coderay_tab_width: 2
   extensions: [ "fenced_code_blocks", "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
   syntax_highlighter: rouge
@@ -14,5 +14,5 @@ url : "http://huxiangtao.github.com"
 name: "elliot's blog"
 encoding: utf-8
 version : "?201403267"
-gems: [jekyll,jekyll-paginate]
+plugins: ["jekyll", "jekyll-paginate"] 
 description: ["developer","researcher","bloger"]
