@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ajax and call&apply"
+tags: [ajax]
 category : javascript
 articleType : blog
 ---
